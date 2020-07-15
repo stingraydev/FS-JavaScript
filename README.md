@@ -1,2 +1,1 @@
-# FS-JavaScript
-Pure JavaScript
+FS-JavaScript
