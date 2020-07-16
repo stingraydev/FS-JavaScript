@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-weight: 300;
+  font-style: normal;
+
+  font-display: swap;
+  src: local('Helvetica Neue Light'), local('Helvetica-Neue-Light'),
+      url('../assets/fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff2') format('woff2'),
+      url('../assets/fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff') format('woff'),
+      url('../assets/fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+    src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
+        url('../assets/fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../assets/fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../assets/fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-weight: 500;
+  font-style: normal;
+
+  font-display: swap;
+    src: local('Helvetica Neue Medium'), local('Helvetica-Neue-Medium'),
+        url('../assets/fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../assets/fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../assets/fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
+      url('../assets/fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+      url('../assets/fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff') format('woff'),
+      url('../assets/fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Italic';
+  font-weight: 400;
+  font-style: italic;
+
+  font-display: swap;
+    src: local('Helvetica Neue Italic'), local('Helvetica-Neue-Italic'),
+        url('../assets/fonts/HelveticaNeueCyr-Italic/HelveticaNeueCyr-Italic.woff2') format('woff2'),
+        url('../assets/fonts/HelveticaNeueCyr-Italic/HelveticaNeueCyr-Italic.woff') format('woff'),
+        url('../assets/fonts/HelveticaNeueCyr-Italic/HelveticaNeueCyr-Italic.ttf') format('truetype');
+}

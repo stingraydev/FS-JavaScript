@@ -13,7 +13,124 @@
 
 <body>
 
-  <div id="app"></div>
+  <div id="app">
+    <header class="header">
+      <div class="header_logo">
+        <a href="" class="header_link">
+          <img src="./assets/icons/logo.svg" alt="logo" class="header_logo">
+        </a>
+        <div class="header_logo-text">
+          Front-End Developer Test Task
+        </div>
+      </div>
+      <div class="header_cart">
+        <div class="header_cart-text">
+          cart
+        </div>
+        <div class="header_cart-logo">
+          <a href="" class="header_cart-link">
+            <img src="./assets/icons/cart.svg" alt="logo" class="header_cart">
+            <div class="header_cart-counter">
+              <span>3</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="card">
+        <div class="card_info">
+          <div class="card_breadcrumbs">
+            <span class="card_breadcrumbs-item card_breadcrumbs-item--active">
+              Shipping
+            </span>
+            <span class="card_breadcrumbs-item">
+              Billing
+            </span>
+            <span class="card_breadcrumbs-item">
+              Payment
+            </span>
+          </div>
+          <h2 class="card_title">Shipping Info</h2>
+          <form id="form" action="" class="card_form">
+            <fieldset class="form_recipient">
+              <legend>Recipient</legend>
+              <input id="input_fullName" form="form" placeholder="Full Name" type="text">
+              <input id="input_daytime" form="form" placeholder="Daytime Phone" type="text">
+              <label for="input_daytime">For delivery questions only</label>
+            </fieldset>
+            <fieldset class="form_adress">
+              <legend>Address</legend>
+              <input id="input_street" form="form" placeholder="Street Adress" type="text">
+              <input id="input_apt" form="form" placeholder="Apt, Suite, Bldg, Gate Code. (optional)" type="text">
+              <input id="input_city" form="form" placeholder="City" type="text">
+              <div class="input_country">
+                <input id="input_country" form="form" placeholder="Country" type="text">
+                <input id="input_zip" form="form" placeholder="ZIP" type="text">
+              </div>
+            </fieldset>
+            <button class="form_button">
+              Continue
+            </button>
+          </form>
+        </div>
+        <div class="card_order">
+          <div class="card_order-header">
+            <div class="card_order-tittle">Order Summary</div>
+            <a href="" class="card_order-link">edit order</a>
+          </div>
+          <div class="card_order-items">
+            <div class="card_order-item">
+              <img src="./assets/images/boots.png" alt="boots" width="43px" height="35px">
+              <div class="card_order-description">
+                <p class="description-tittle">The Chelsea Boot</p>
+                <p class="description-text">Black</p>
+                <p class="description-text">Quantity: 1</p>
+              </div>
+              <div class="card_order-cost">$235</div>
+            </div>
+            <div class="card_order-item">
+              <img src="./assets/images/backpack.png" alt="backpack" width="43px" height="35px">
+              <div class="card_order-description">
+                <p class="description-tittle">The Twill Snap Backpack</p>
+                <p class="description-text">Reverse Denim + Brown leather</p>
+                <p class="description-text">Quantity: 1</p>
+              </div>
+              <div class="card_order-cost">$65</div>
+            </div>
+            <div class="card_order-item">
+              <img src="./assets/images/bag.png" alt="bag" width="43px" height="35px">
+              <div class="card_order-description">
+                <p class="description-tittle">The Twill Zip Tote</p>
+                <p class="description-text">Reverse Denim + Black leather</p>
+                <p class="description-text">Quantity: 1</p>
+              </div>
+              <div class="card_order-cost">$48</div>
+            </div>
+          </div>
+          <div class="card_order-pretotal">
+            <div class="card_order-subtotal">
+              <p>Subtotal</p>
+              <p>$398</p>
+            </div>
+            <div class="card_order-shipping">
+              <p>Shipping</p>
+              <p>Free</p>
+            </div>
+            <div class="card_order-taxes">
+              <p>Taxes</p>
+              <p>$12.12</p>
+            </div>
+          </div>
+          <div class="card_order-total">
+            <p>Total</p>
+            <p>$410.12</p>
+          </div>
+          <a class="card_order-purchases">All purchases are subject to our Terms and Conditions.</a>
+        </div>
+      </div>
+    </main>
+  </div>
 
 </body>
 

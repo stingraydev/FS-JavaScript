@@ -1,0 +1,39 @@
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "../components/Layout/Layout.scss";
+@import "../components/Card-Info/CardInfo.scss";
+
+body {
+  font-family: "Helvetica Neue Regular";
+  font-style: normal;
+  font-size: 15px;
+}
+
+section,
+header,
+footer {
+  padding: 0 15px;
+}
+
+@media (min-width: 699.98px) {
+  section,
+  header,
+  footer,
+  main {
+    padding: 0 calc(50vw - 350px);
+  }
+}
+
+.main {
+  padding-top: 45px;
+}
+
+.card {
+  display: flex;
+  background-color: #ffffff;
+}
+
+fieldset {
+  border: none;
+}

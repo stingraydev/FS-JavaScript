@@ -1,0 +1,52 @@
+.header {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_logo-text {
+    font-family: "Helvetica Neue Light";
+    font-weight: 300;
+    font-size: 19px;
+    margin-left: 10px;
+    color: $violet-color;
+  }
+  &_logo {
+    display: flex;
+  }
+  &_cart {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 60px;
+    height: 22px;
+  }
+  &_cart-text {
+    font-size: 15px;
+    line-height: 13px;
+    color: $text-pink-color;
+    margin-right: 8px;
+  }
+  &_cart-counter {
+    font-family: "Helvetica Neue Medium";
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: #ffffff;
+
+    position: absolute;
+    right: -24%;
+    top: -33%;
+    background-color: $pink-color;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main {
+  background-color: $grey-color;
+  min-height: calc(100vh - 50px);
+}

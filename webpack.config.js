@@ -88,12 +88,14 @@ const plugins = () => {
       }
     }),
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, 'src/favicon.ico'),
-        to: path.resolve(__dirname, 'dist')
-      }
-    ]),
+    new CopyWebpackPlugin([{
+      from: './assets/images',
+      to: 'assets/images'
+    },
+    {
+      from: './assets/icons',
+      to: 'assets/icons'
+    }]),
     new MiniCssExtractPlugin({
       filename: filename('css')
     })
@@ -119,7 +121,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.png'],
     alias: {
-      '@models': path.resolve(__dirname, 'src/components'),
+      '@components': path.resolve(__dirname, 'src/components'),
       '@': path.resolve(__dirname, 'src'),
     }
   },
@@ -141,20 +143,17 @@ module.exports = {
         use: cssLoaders('sass-loader')
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
+        test: /\.(png|jpe?g|svg|gif)$/,
         use: ['file-loader']
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
-        use: ['file-loader']
-      },
-      {
-        test: /\.xml$/,
-        use: ['xml-loader']
-      },
-      {
-        test: /\.csv$/,
-        use: ['csv-loader']
+        use: {
+          loader: 'file-loader',
+          options: {
+          name: '[path][name].[ext]',
+          },
+        }
       },
       {
         test: /\.js$/,

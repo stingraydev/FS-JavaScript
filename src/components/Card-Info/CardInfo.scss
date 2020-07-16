@@ -1,0 +1,45 @@
+.card_info {
+  padding: 20px 40px;
+  padding-bottom: 44px;
+  color: $violet-color;
+}
+
+.card {
+  &_breadcrumbs {
+    margin-bottom: 20px;
+    color: $grey-text-color;
+
+    &-item {
+      margin-right: 40px;
+      line-height: 14px;
+      font-size: 14px;
+      position: relative;
+
+      &:nth-child(1):after {
+        content: "";
+        position: absolute;
+        right: -22px;
+        top: 1px;
+        width: 14px;
+        height: 14px;
+        border-right: $grey-light-color 2px solid;
+        border-top: $grey-light-color 2px solid;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2):after {
+        content: "";
+        position: absolute;
+        right: -22px;
+        top: 1px;
+        width: 14px;
+        height: 14px;
+        border-right: $grey-light-color 2px solid;
+        border-top: $grey-light-color 2px solid;
+        transform: rotate(45deg);
+      }
+      &--active {
+        color: $violet-color;
+      }
+    }
+  }
+}
